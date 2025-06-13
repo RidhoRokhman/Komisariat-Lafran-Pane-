@@ -1,56 +1,87 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Website resmi Himpunan Mahasiswa Islam Komisariat Lafran Pane Cabang Kebumen. Info kegiatan, keanggotaan, dan agenda terbaru HMI KMLP." />
-  <meta name="keywords" content="HMI, Himpunan Mahasiswa Islam, Kebumen, Lafran Pane, HMI KMLP, organisasi mahasiswa" />
-  <meta name="author" content="HMI Komisariat Lafran Pane Kebumen" />
-  <title>HMI Komisariat Lafran Pane Kebumen</title>
-  <link rel="icon" href="logo-hmi.png">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Komisariat Lafran Pane – HMI Kebumen</title>
+  <style>
+    :root {--hijau: #006400;--hitam: #000;--putih: #fff;}
+    body {margin:0;font-family:sans-serif;background:#f5f5f5;color:#111;}
+    header, footer {background:var(--hijau);color:var(--putih);text-align:center;padding:20px;}
+    nav {background:var(--hitam);text-align:center;}
+    nav a {color:var(--putih);display:inline-block;padding:15px 20px;text-decoration:none;}
+    nav a:hover {background:#014d01;}
+    section {padding:40px 20px;max-width:1000px;margin:auto;}
+    .gallery {display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:10px;}
+    .gallery img {width:100%;height:auto;border:2px solid var(--hijau);}
+    .contact-form {display:flex;flex-direction:column;gap:10px;max-width:500px;margin:auto;}
+    .contact-form input, .contact-form textarea {padding:10px;border:1px solid #ccc;border-radius:4px;}
+    .contact-form button {padding:12px;background:var(--hijau);color:var(--putih);border:none;cursor:pointer;}
+    .contact-form button:hover {background:#014d01;}
+    footer a {color:var(--putih);text-decoration:underline;}
+  </style>
 </head>
 <body>
+
   <header>
-    <nav>
-      <img src="logo-hmi.png" alt="Logo HMI" class="logo">
-      <ul>
-        <li><a href="#beranda">Beranda</a></li>
-        <li><a href="#tentang">Tentang</a></li>
-        <li><a href="#agenda">Agenda</a></li>
-        <li><a href="#kontak">Kontak</a></li>
-      </ul>
-    </nav>
+    <h1>Komisariat Lafran Pane – HMI Kebumen</h1>
+    <p>Mewujudkan Insan Cita di Kebumen</p>
   </header>
 
-  <section id="beranda" class="hero">
-    <h1>HMI Komisariat Lafran Pane Kebumen</h1>
-    <p>Berdaya, Bersatu, Berkontribusi untuk Umat dan Bangsa</p>
+  <nav>
+    <a href="#beranda">Beranda</a>
+    <a href="#tentang">Tentang</a>
+    <a href="#berita">Berita</a>
+    <a href="#galeri">Galeri</a>
+    <a href="#kontak">Kontak</a>
+  </nav>
+
+  <section id="beranda">
+    <h2>Selamat Datang</h2>
+    <p>Selamat datang di situs resmi Komisariat Lafran Pane Cabang Kebumen – bagian dari Himpunan Mahasiswa Islam. Kami hadir sebagai wadah pengembangan kader dan kaderisasi dalam semangat keislaman dan kemahasiswaan.</p>
   </section>
 
   <section id="tentang">
     <h2>Tentang Kami</h2>
-    <p>Himpunan Mahasiswa Islam (HMI) Komisariat Lafran Pane Cabang Kebumen adalah organisasi kader yang berkomitmen untuk mencetak insan akademis, pencipta, pengabdi yang bernafaskan Islam dan bertanggung jawab atas terwujudnya masyarakat adil makmur yang diridhoi Allah SWT.</p>
+    <p>Komisariat Lafran Pane adalah unit struktural HMI di Kebumen, bernama sesuai pendiri HMI, Lafran Pane. Kami bertujuan membentuk kader yang berdaya cipta dan berkontribusi nyata bagi rakyat serta negara.</p>
   </section>
 
-  <section id="agenda">
-    <h2>Agenda Terbaru</h2>
-    <ul>
-      <li>Latihan Kader 1 - Juni 2025</li>
-      <li>Diskusi Publik: Peran Mahasiswa dalam Demokrasi - Juli 2025</li>
-      <li>Pengabdian Masyarakat - Agustus 2025</li>
-    </ul>
+  <section id="berita">
+    <h2>Berita & Kegiatan</h2>
+    <article>
+      <h3>Basic Training Latihan Kader (LK1)</h3>
+      <p>Pelatihan kader dasar baru-baru ini melibatkan puluhan peserta, dengan pembekalan tentang organisasi, agama, dan masyarakat.</p>
+    </article>
+    <!-- Tambahkan artikel berita selanjutnya -->
+  </section>
+
+  <section id="galeri">
+    <h2>Galeri Kegiatan</h2>
+    <div class="gallery">
+      <img src="img1.jpg" alt="Foto kegiatan 1">
+      <img src="img2.jpg" alt="Foto kegiatan 2">
+      <img src="img3.jpg" alt="Foto kegiatan 3">
+      <img src="img4.jpg" alt="Foto kegiatan 4">
+      <img src="img5.jpg" alt="Foto kegiatan 5">
+      <img src="img6.jpg" alt="Foto kegiatan 6">
+    </div>
   </section>
 
   <section id="kontak">
     <h2>Kontak Kami</h2>
-    <p>Hubungi kami melalui WhatsApp: <a href="https://wa.me/628816537366">0881-6537-366 (Ridho)</a></p>
-    <p>Email: komisariatlafranpane20@gmai.com</p>
-    <p>Instagram: <a href="https://instagram.com/komisariatlafranpane">@komisariatlafranpane</a></p>
+    <form class="contact-form" action="mailto:komisariatlafranpane20@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="Nama" placeholder="Nama Kamu" required>
+      <input type="email" name="Email" placeholder="Email Kamu" required>
+      <textarea name="Pesan" rows="5" placeholder="Tulis Pesan..." required></textarea>
+      <button type="submit">Kirim Pesan</button>
+    </form>
+    <p>Follow Instagram: <a href="https://instagram.com/komisariatlafranpane" target="_blank">@komisariatlafranpane</a></p>
+    <p>Email: <a href="mailto:komisariatlafranpane20@gmail.com">komisariatlafranpane20@gmail.com</a></p>
   </section>
 
   <footer>
-    <p>&copy; 2025 HMI KMLP Kebumen. Seluruh hak cipta dilindungi.</p>
+    &copy; 2025 Komisariat Lafran Pane – HMI Kebumen
   </footer>
+
 </body>
 </html>
