@@ -7,7 +7,7 @@
   <style>
     :root {--hijau: #006400;--hitam: #000;--putih: #fff;}
     body {margin:0;font-family:sans-serif;background:#f5f5f5;color:#111;}
-    header, footer {background:var(--hijau);color:var(--putih);padding:20px;position:relative;}
+    header, footer {background:var(--hijau);color:var(--putih);text-align:center;padding:20px;}
     nav {background:var(--hitam);text-align:center;}
     nav a {color:var(--putih);display:inline-block;padding:15px 20px;text-decoration:none;}
     nav a:hover {background:#014d01;}
@@ -19,36 +19,33 @@
     .contact-form button {padding:12px;background:var(--hijau);color:var(--putih);border:none;cursor:pointer;}
     .contact-form button:hover {background:#014d01;}
     footer a {color:var(--putih);text-decoration:underline;}
-    
-    /* Logo dan teks di kanan atas header */
-    .logo-wrapper {
-      position: absolute;
-      top: 20px;
-      right: 20px;
+
+    /* Logo di bawah Beranda */
+    .logo-bawah {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 15px;
+      margin-top: 30px;
     }
-    .logo-wrapper img {
-      width: 60px;
-      height: 60px;
+    .logo-bawah img {
+      width: 80px;
+      height: 80px;
       border-radius: 50%;
-      border: 2px solid var(--putih);
+      border: 2px solid var(--hijau);
     }
-    .logo-wrapper span {
+    .logo-bawah span {
       font-weight: bold;
-      font-size: 14px;
-      text-align: right;
-      line-height: 1.2;
+      font-size: 16px;
+      line-height: 1.4;
     }
-
     @media (max-width: 600px) {
-      .logo-wrapper {
+      .logo-bawah {
         flex-direction: column;
-        align-items: flex-end;
+        align-items: center;
+        text-align: center;
       }
-      .logo-wrapper span {
-        font-size: 12px;
+      .logo-bawah span {
+        font-size: 14px;
       }
     }
   </style>
@@ -56,10 +53,6 @@
 <body>
 
   <header>
-    <div class="logo-wrapper">
-      <img src="logo-hmi.png" alt="Logo HMI">
-      <span>Komisariat Lafran Pane<br>Cabang Kebumen</span>
-    </div>
     <h1>Komisariat Lafran Pane – HMI Kebumen</h1>
     <p>Mewujudkan Insan Cita di Kebumen</p>
   </header>
@@ -75,6 +68,11 @@
   <section id="beranda">
     <h2>Selamat Datang</h2>
     <p>Selamat datang di situs resmi Komisariat Lafran Pane Cabang Kebumen – bagian dari Himpunan Mahasiswa Islam. Kami hadir sebagai wadah pengembangan kader dan kaderisasi dalam semangat keislaman dan kemahasiswaan.</p>
+
+    <div class="logo-bawah">
+      <img src="logo-hmi.png" alt="Logo HMI">
+      <span>Komisariat Lafran Pane<br>Cabang Kebumen</span>
+    </div>
   </section>
 
   <section id="tentang">
